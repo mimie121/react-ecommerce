@@ -1,0 +1,65 @@
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url(/Background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+  }
+  
+ 
+  .header-des {
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadedtext 3s;
+  }
+  
+  .header-des h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .header-des span {
+    color: #ff6347; 
+  }
+  
+  .header-des p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .header-des button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-des button:hover {
+    background-color: #e55347;
+  }
+  
+
+  @media (max-width:1050px) {
+     .header-section{
+      height: 170vw;
+     }
+
+  
+  }
+
+
