@@ -1,0 +1,159 @@
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 55px;
+    background-color: #323131;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .navbar-logo .logo {
+    width: 100px; 
+    height: auto;
+    cursor: pointer;
+  }
+  
+ 
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .navbar-links li a {
+    color: #fff;
+    font-size: 16.3px;
+    transition: color 0.4s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; 
+}
+  .navbar-links li a:hover {
+    color: #ff6347; 
+    
+  }
+  
+ 
+  .navbar-links li a.active {
+    color: #ff6347;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6347; 
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  
+  .navbar-right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+ 
+  .navbar-search-icon {
+    position: relative;
+  }
+  
+  .navbar-search-icon .dot {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid #333; 
+  }
+  
+
+  .navbar-right button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-right button:hover {
+    background-color: #da7867; 
+  }
+  
+  @media (max-width:1050px) {
+    .navbar-section .logo{
+      width: 110px;
+      margin-left: -20px;
+   
+    }
+
+    .search-icon{
+      display: none;
+    }
+
+    .navbar-links{
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .navbar-right{
+      gap: 30px;
+    }
+
+    .navbar-right img{
+      width: 22px;
+    }
+
+    .navbar-right button{
+      padding: 8px 25px;
+    }
+  }
+
+
+  @media (max-width:900px) {
+    .navbar-section .logo{
+      width: 100px;
+      margin-left: -20px;
+
+    }
+    .search-icon{
+      display: none;
+    }
+
+    .navbar-links{
+      gap: 15px;
+      font-size: 17px;
+    }
+
+    .navbar-right{
+      gap: 20px;
+    }
+
+    .navbar-right img{
+      width: 20px;
+    }
+
+    .navbar-right button{
+      padding: 7px 20px;
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width:750px) {
+ 
+    .navbar-links{
+    display: none;
+    }
+.search-icon{
+  display: none;
+}
+  }
